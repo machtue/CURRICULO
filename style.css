@@ -1,0 +1,240 @@
+
+body {
+    margin: 0;
+    padding: 40px;
+    min-height: 100vh;
+    font-family: Arial,  sans-serif;
+    background:linear-gradient(120deg, #42b6,#00dce9) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.card-curriculo {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.12);
+}
+
+
+.perfil {
+    width: 515px;
+    max-width: 100%;
+    padding: 35px;
+    background-color: white;
+    border-radius: 17px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2563eb;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+}
+
+.perfil h1 {
+    color: #1e3a8a; 
+    font-size: 24px;
+    margin: 12px 0;
+}
+
+.botoes-perfil {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #2563eb, #93c5fd, #2563eb);
+    margin: 20px 0;
+}
+
+
+.secao {
+    margin-bottom: 20px;
+}
+
+.secao h2 {
+    color: #1e3a8a;
+    font-size: 18px;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+}
+
+.secao h3 {
+    color: #2563eb;
+    font-size: 16px;
+    margin: 10px 0 6px 0;
+}
+
+.lista-info {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.lista-info li {
+    color: #334155; 
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.lista-info strong {
+    color: #2563eb; 
+}
+
+
+.formulario {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.formulario h2 {
+    color: #1e3a8a;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+
+.btn-acao,
+.formulario button[type="submit"] {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-acao:hover,
+.formulario button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-acao:active,
+.formulario button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+#cancelar {
+    background-color: #94a3b8;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#cancelar:hover {
+    background-color: #64748b;
+}
+
+
+
+
+.Formulario button{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+
+}
+ .Formulario input :focus,
+ .Formulario textarea:focus{
+    outline: 2px sold #087bfa;
+    outline-offset: 1px;
+
+ }
+
+ [hideen]{
+    display: nome !important;
+ }
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 25px 16px;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .perfil,
+  .formulario {
+    width: 100%;
+    max-width: 450px;
+    padding: 25px;
+  }
+
+  .perfil img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .perfil h1 {
+    font-size: 28px;
+  }
+
+  .perfil h3 {
+    font-size: 19px;
+  }
+
+  .perfil p {
+    font-size: 16px;
+  }
+
+}
